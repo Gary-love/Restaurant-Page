@@ -1,12 +1,16 @@
+import title from"../images/title.jpg";
 const header=document.querySelector("header");
 const content=document.querySelector("#content");
 let home=function(){
-    let restaurantName=document.createElement("div");
+    let restaurantName=document.createElement("img");
     let reviews=document.createElement("div");
     let location=document.createElement("div");
     let address=document.createElement("div");
     let workingHours=document.createElement("div");
     let imageShowCase=document.createElement("div");
+    let container=document.createElement("div");
+    let ourFood=document.createElement("div");
+    let food=document.createElement("div");
     let review1=document.createElement("div");
     let review2=document.createElement("div");
     let review3=document.createElement("div");
@@ -18,10 +22,12 @@ let home=function(){
     let friday=document.createElement("div");
     let saturday=document.createElement("div");
     let sunday=document.createElement("div");
+    container.id="container";
+    ourFood.id="food";
     imageShowCase.id="image";
-    restaurantName.textContent="Champion’s Feast";
+    restaurantName.src=title;
     restaurantName.id="restaurantName";
-    reviews.textContent="Reviews";
+    food.src=food;
     review1.textContent="\"I had the pleasure of dining at Champion’s Feast. The ambiance was warm and inviting, with the walls adorned with championship belts and memorabilia. The food was delicious, with tender and flavorful ribs that complemented the fresh sides. The service was attentive and enthusiastic, with my server sharing insights into the wrestling lore behind each dish.\""
     review2.textContent="\"Champion’s Feast is an absolute knockout! The moment you step inside, you’re immersed in the electrifying world of wrestling. The decor is filled with memorabilia, and the atmosphere is buzzing with excitement. I ordered the 'Stone Cold Stunner Nachos'—they were massive and loaded with flavor! The staff is super friendly, and the service is top-notch. A must-visit for any wrestling fan!\""
     review3.textContent="\"What a fantastic dining experience at Champion’s Feast! The menu is creatively themed, with dishes named after legendary wrestlers. I tried the 'Royal Rumble Ribs,' and they were tender and juicy, served with a tangy barbecue sauce. The vibe is perfect for family and friends, and the giant screens showing classic matches make it even better. I’ll definitely be back for more!\"";
@@ -51,14 +57,17 @@ let home=function(){
     workingHours.appendChild(friday);
     workingHours.appendChild(saturday);
     workingHours.appendChild(sunday);
-    location.textContent="Location";
     location.id="location";
     address.textContent="123 Main St, Champion's Feast, CA 90210";
     location.appendChild(address);
-    header.appendChild(restaurantName);
+    header.insertBefore(restaurantName,header.firstChild);
     content.appendChild(imageShowCase);
     content.appendChild(reviews);
-    content.appendChild(workingHours);
+    ourFood.appendChild(food);
+    container.appendChild(ourFood);
+    content.appendChild(container);
+    container.appendChild(workingHours);
     content.appendChild(location);
+    
 }
 export default home;

@@ -1,0 +1,84 @@
+body{
+    margin:0px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+}
+header{
+    grid-column: 1/13;
+    grid-row: 1/2;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    >nav{
+        align-self: flex-end;
+    }
+}
+button{
+    margin: 20px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: yellow;
+    border: solid red;
+    border-radius: 10px;
+    font-weight:bold;
+}
+#content{
+    grid-column: 1/13;
+    grid-row: 2/13;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#image{
+    height: 700px;
+    background-image: url("../images/hulk-hogan2.jpg");
+    background-size: cover;
+}
+.reviews{
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+    margin-bottom: 200px;
+}
+.reviews >*{
+    padding: 15px;
+    font-weight:bold;
+    color: yellow;
+    font-weight: bold;
+}
+#location{
+    color: yellow;
+}
+#hours{
+    margin-top: 50px;
+    margin: 50px;
+    font-size: 30px;
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-weight: bold;
+
+}
+#location{
+    align-self: center;
+}
+#restaurantName{
+    height: 80px;
+    width: 500px;
+}
+#container{
+    background-color: white;
+    display: flex;
+}
+#food{
+    >:first-child{
+        width: 750px;
+        height: 700px;
+        background-image: url("../images/food.jpg");
+    }
+}
