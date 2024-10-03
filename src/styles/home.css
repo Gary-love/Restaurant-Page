@@ -12,9 +12,6 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    >nav{
-        align-self: flex-end;
-    }
 }
 button{
     margin: 20px;
@@ -81,4 +78,7 @@ button{
         height: 700px;
         background-image: url("../images/food.jpg");
     }
+}
+#drinks,.food,#sides{
+    color:yellow;
 }

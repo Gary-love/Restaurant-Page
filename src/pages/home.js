@@ -1,8 +1,5 @@
-import title from"../images/title.jpg";
-const header=document.querySelector("header");
 const content=document.querySelector("#content");
 let home=function(){
-    let restaurantName=document.createElement("img");
     let reviews=document.createElement("div");
     let location=document.createElement("div");
     let address=document.createElement("div");
@@ -25,8 +22,6 @@ let home=function(){
     container.id="container";
     ourFood.id="food";
     imageShowCase.id="image";
-    restaurantName.src=title;
-    restaurantName.id="restaurantName";
     food.src=food;
     review1.textContent="\"I had the pleasure of dining at Champion’s Feast. The ambiance was warm and inviting, with the walls adorned with championship belts and memorabilia. The food was delicious, with tender and flavorful ribs that complemented the fresh sides. The service was attentive and enthusiastic, with my server sharing insights into the wrestling lore behind each dish.\""
     review2.textContent="\"Champion’s Feast is an absolute knockout! The moment you step inside, you’re immersed in the electrifying world of wrestling. The decor is filled with memorabilia, and the atmosphere is buzzing with excitement. I ordered the 'Stone Cold Stunner Nachos'—they were massive and loaded with flavor! The staff is super friendly, and the service is top-notch. A must-visit for any wrestling fan!\""
@@ -60,7 +55,6 @@ let home=function(){
     location.id="location";
     address.textContent="123 Main St, Champion's Feast, CA 90210";
     location.appendChild(address);
-    header.insertBefore(restaurantName,header.firstChild);
     content.appendChild(imageShowCase);
     content.appendChild(reviews);
     ourFood.appendChild(food);
@@ -68,6 +62,5 @@ let home=function(){
     content.appendChild(container);
     container.appendChild(workingHours);
     content.appendChild(location);
-    
 }
 export default home;
