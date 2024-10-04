@@ -1,6 +1,5 @@
 const content=document.querySelector("#content");
 import home from "./pages/home";
-import "./styles/home.css";
 import menu from"./pages/menu";
 import about from "./pages/about";
 import loadFirst from "./pages/loadFirst";

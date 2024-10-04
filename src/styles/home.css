@@ -59,7 +59,6 @@ button{
     flex-direction: column;
     gap: 40px;
     font-weight: bold;
-
 }
 #location{
     align-self: center;
@@ -80,5 +79,24 @@ button{
     }
 }
 #drinks,.food,#sides{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     color:yellow;
+    align-items: center;
+    >*{
+        display: flex;
+        flex-direction: column;
+        border: solid red;
+        padding: 50px;
+        width: 350px;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
 }
+.pics{
+    height:150px;
+    width: 150px;
+}
+

@@ -1,3 +1,4 @@
+import "../styles/home.css";
 const content=document.querySelector("#content");
 let home=function(){
     let reviews=document.createElement("div");
