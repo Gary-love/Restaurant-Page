@@ -5,8 +5,6 @@ let home=function(){
     overflow-y: none; 
     `
     let reviews=document.createElement("div");
-    let location=document.createElement("div");
-    let address=document.createElement("div");
     let workingHours=document.createElement("div");
     let imageShowCase=document.createElement("div");
     let container=document.createElement("div");
@@ -56,15 +54,11 @@ let home=function(){
     workingHours.appendChild(friday);
     workingHours.appendChild(saturday);
     workingHours.appendChild(sunday);
-    location.id="location";
-    address.textContent="123 Main St, Champion's Feast, CA 90210";
-    location.appendChild(address);
     content.appendChild(imageShowCase);
     content.appendChild(reviews);
     ourFood.appendChild(food);
     container.appendChild(ourFood);
     content.appendChild(container);
     container.appendChild(workingHours);
-    content.appendChild(location);
 }
 export default home;
