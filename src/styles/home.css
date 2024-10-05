@@ -64,6 +64,8 @@ button{
 }
 #location{
     align-self: center;
+    font-size: 30px;
+    font-weight: bold;
 }
 #restaurantName{
     height: 80px;
@@ -100,6 +102,9 @@ button{
     }
 }
 .pics{
+    border: solid yellow 10px;
+    margin-right: 40px;
+    margin-top: 20px;
     height:200px;
     width: 200px;
 }
@@ -115,8 +120,15 @@ button{
     color: rgb(255, 0, 0);
     font-size: 50px;
 }
-#kane{
+/* #kane{
     height:300px;
     width: 420px;
+} */
+#drink2{
+    margin-right: 40px;
+    width:300px;
+}
+#drink3{
+    height: 400px;
 }
 

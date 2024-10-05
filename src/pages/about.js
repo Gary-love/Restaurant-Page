@@ -1,4 +1,4 @@
-import kaneImg from"../images/kane.jpg";
+import kaneImg from"../images/Kane.jpg";
 import cmPunkImg from"../images/cmPunk.jpg";
 import drewImg from"../images/drew.jpg";
 import shamusImg from"../images/shamus.jpeg";
@@ -20,6 +20,14 @@ let about=function(){
     let cmPunkPic=document.createElement("img");
     let drewPic=document.createElement("img");
     let shamusPic=document.createElement("img");
+    let masterChef=document.createElement("p");
+    let desertChef=document.createElement("p");
+    let waiter1=document.createElement("p");
+    let waiter2=document.createElement("p");
+    masterChef.textContent="Master chef/Chef from hell: Kane";
+    desertChef.textContent="Desert chef/Straight Edge: CmPunk";
+    waiter1.textContent="Waiter/A good feller: Shamus";
+    waiter2.textContent="Waiter/Hypocrite: Drew";
     kanePic.classList="pics";
     cmPunkPic.classList="pics";
     drewPic.classList="pics";
@@ -42,6 +50,10 @@ let about=function(){
     cmPunk.appendChild(cmPunkPic);
     drew.appendChild(drewPic);
     shamus.appendChild(shamusPic);
+    kane.appendChild(masterChef);
+    cmPunk.appendChild(desertChef);
+    shamus.appendChild(waiter1);
+    drew.appendChild(waiter2);
     staff.appendChild(kane);
     staff.appendChild(cmPunk);
     staff.appendChild(shamus);
