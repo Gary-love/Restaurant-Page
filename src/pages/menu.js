@@ -7,7 +7,11 @@ import pizza from"../images/pizza.jpg";
 import iceCream from"../images/icecream1.jpg";
 const content=document.querySelector("#content");
 let menu=function(){
-    let drinks=document.createElement("div")
+    let drinks=document.createElement("div");
+    content.style=`
+    overflow-y: auto; 
+    max-height: 900px;
+    `
     drinks.textContent="Our Drinks";
     drinks.id="drinks";
     let drink1=document.createElement("div");

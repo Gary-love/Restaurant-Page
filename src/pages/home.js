@@ -1,6 +1,9 @@
 import "../styles/home.css";
 const content=document.querySelector("#content");
 let home=function(){
+    content.style=`
+    overflow-y: none; 
+    `
     let reviews=document.createElement("div");
     let location=document.createElement("div");
     let address=document.createElement("div");
